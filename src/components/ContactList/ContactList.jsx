@@ -36,10 +36,10 @@ export const ContactList = () => {
       <List>
 
        
-        {filteredContacts.map(({ id, name, phone }) => (
+        {filteredContacts.map(({ id, name, number }) => (
           <Item key={id}>
             <Text>
-              {name}: {phone}
+              {name}: {number}
             </Text>
             <Button type="button" onClick={() => onDeleteContact(id)}>
               Delete
